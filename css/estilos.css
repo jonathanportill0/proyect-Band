@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:linear-gradient(100deg, #141212,#2A2855  );
+height: 150vh;
+}
+ .formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #af36f5dc;
+    border-radius: 20px;
+ }
+ .formulario h1{
+    text-align: center;
+        padding: 0 0 20px 0;
+        color: rgb(48, 46, 43);
+    border-bottom:1px solid rgb(48, 46, 43);
+ }
+ .formulario form{ 
+    padding: 0 40px;
+    box-sizing: border-box;
+ }
+ form .username{
+    position: relative;
+    border-bottom:2px solid rgba(217, 214, 223, 0.877)  ;
+    margin: 30px 0;
+ }
+ .username input{
+    width: 100px;
+    padding: 0% 50px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline:none;
+ }
+ .username label{
+    position:absolute;
+    top:30px;
+    left: 5px;
+    color:rgb(48, 46, 43);
+    transform:translateY(-200%);
+    font-size: 16px;
+    pointer-events: none;
+   transition: .5s;}
+
+    
+    form .contraseña{
+      position: relative;
+      border-bottom:2px solid rgba(217, 214, 223, 0.877)  ;
+      margin: 30px 0;}
+     
+    .contraseña input{width: 100px;
+      padding:   0% 50px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline:none;
+
+    }
+
+    
+     .contraseña label{
+      position:absolute;
+      top: 30px;
+      left: 5px;
+      color:rgb(48, 46, 43);
+      transform:translateY(-200%);
+      font-size: 16px;
+      pointer-events: none;
+   transition: .5s;}
+   
+      
+      .username span::before{ 
+      content:´´;
+      position:absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background:#4b0affcc;
+   }
+
+   .username input:focus~ label,
+   .username input:focus~ label{ 
+      top:5px;
+   color:#a7a7a7cc;
+   }
+   .username input:focus~span::before,
+   .username input:focus~span::before{
+      width: 100%;
+   }
+   
+    .contraseña span::before{ 
+      content:´´;
+      position:absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background:#74057e;
+   }
+   .contraseña input:focus~ label,
+   .contraseña input:focus~ label{ 
+      top:5px;
+   color:#a7a7a7cc;
+   }
+   .contraseña input:focus~span::before,
+   .contraseña input:focus~span::before{
+      width: 100%;}
+      
+   
+        
+       
